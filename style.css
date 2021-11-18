@@ -45,7 +45,12 @@
   @media (min-width: 576px) {
     .menu-grid{
       grid-template-columns: 1fr 1fr 1fr;
+      padding: 20px;
     }
+    .language div{
+        width: 10px;
+        
+      }
   }
   @media (min-width: 992px) {
     .menu-grid {
