@@ -10,7 +10,7 @@
   .header{
       border-bottom: 1px solid;
       border-color: aliceblue;
-      font-size: 20px;
+      font-size: 08px;
       height: 10vh;
       text-align: center;
       background-color: rgb(9, 23, 82);
@@ -24,12 +24,6 @@
     width: 100%;
 }
 
-  @media (min-width: 410px) {
-    .header {
-        font-size: 8px;
-    }
-  }
-
   .main{
       background-color: rgb(19, 37, 110);
       height: 80vh;
@@ -37,25 +31,87 @@
 
   .menu-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr ;
+    gap: 15px;
     height: 70vh;
-    padding: 50px;
+    padding: 10px 50px 10px 50px;
   }
+
+  .menu-grid div{
+    font-size: 10px;
+    height: 40px;
+  }
+
+  @media (min-width: 480px) {
+    .header h1{
+        font-size: 20px;
+    }
+    .menu-grid {
+      grid-template-columns: 1fr 1fr ;
+      gap: 20px;
+      padding: 50px;
+    }
+    .menu-grid div{
+      height: 80px;
+    }
+  }
+
   @media (min-width: 576px) {
     .menu-grid{
       grid-template-columns: 1fr 1fr 1fr;
+<<<<<<< HEAD
       padding: 20px;
     }
     .language div{
         width: 10px;
         
       }
+=======
+      padding: 10px 50px 10px 50px;
+      gap: 20px;
+      
+    }
+    .menu-grid div{
+      font-size: 15px;
+      height: 50px;
+    }
+    
+    .header h1 {
+      top: 20%;
+      font-size: 15px;
   }
+
+  }
+
+  @media (min-width: 768px) {
+    .menu-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 50px;
+      gap: 20px;
+      
+    }
+    .menu-grid div{
+      font-size: 15px;
+      height: 80px;
+    }
+    
+    .header h1 {
+      top: 40%;
+      font-size: 15px;
+  }
+
+>>>>>>> 9e1785dfee711b9931dc68dd1e2030674a3055d5
+  }
+
   @media (min-width: 992px) {
     .menu-grid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 50px;
     }
+    .header h1 {
+      top: 40%;
+  }
+
   }
 
   .option{
@@ -91,6 +147,12 @@
     height: 100%;
   }
   
+  @media (min-width: 992px) {
+    .language div{
+      width: 80px;     
+    }
+  }
+
   .footer{
     font-size: 12px;
     height: 10vh;
