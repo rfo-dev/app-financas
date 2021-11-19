@@ -10,20 +10,30 @@
   .header{
       border-bottom: 1px solid;
       border-color: aliceblue;
-      font-size: 08px;
       height: 10vh;
       text-align: center;
       background-color: rgb(9, 23, 82);
       color: aliceblue;
-      position: relative;
+      display: flex;
+      align-items: center;
   }
 
   .header h1 {
-    top: 40%;
-    position: absolute;
     width: 100%;
+    font-size: 20px;
 }
 
+@media (min-width: 480px) {
+  .header h1{
+      font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header h1 {
+    font-size: 40px;
+}
+}
   .main{
       background-color: rgb(19, 37, 110);
       height: 80vh;
@@ -34,18 +44,15 @@
     grid-template-columns: 1fr ;
     gap: 15px;
     height: 70vh;
-    padding: 10px 50px 10px 50px;
+    padding: 20px 50px 20px 50px;
   }
 
   .menu-grid div{
-    font-size: 10px;
+    font-size: 15px;
     height: 40px;
   }
 
   @media (min-width: 480px) {
-    .header h1{
-        font-size: 20px;
-    }
     .menu-grid {
       grid-template-columns: 1fr 1fr ;
       gap: 20px;
@@ -59,59 +66,19 @@
   @media (min-width: 576px) {
     .menu-grid{
       grid-template-columns: 1fr 1fr 1fr;
-<<<<<<< HEAD
       padding: 20px;
     }
-    .language div{
-        width: 10px;
-        
-      }
-=======
-      padding: 10px 50px 10px 50px;
-      gap: 20px;
-      
-    }
     .menu-grid div{
-      font-size: 15px;
-      height: 50px;
+      height: 100px;
     }
-    
-    .header h1 {
-      top: 20%;
-      font-size: 15px;
-  }
-
-  }
-
-  @media (min-width: 768px) {
-    .menu-grid{
-      grid-template-columns: 1fr 1fr 1fr;
-      padding: 50px;
-      gap: 20px;
-      
-    }
-    .menu-grid div{
-      font-size: 15px;
-      height: 80px;
-    }
-    
-    .header h1 {
-      top: 40%;
-      font-size: 15px;
-  }
-
->>>>>>> 9e1785dfee711b9931dc68dd1e2030674a3055d5
   }
 
   @media (min-width: 992px) {
     .menu-grid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       padding: 50px;
+      padding-bottom: 0px;
     }
-    .header h1 {
-      top: 40%;
-  }
-
   }
 
   .option{
@@ -125,12 +92,13 @@
       color: #424242;
       height: 80px;
   }
-  
+
   .option:hover{
     background-color: rgb(87, 82, 82);
     color: aliceblue;
     border: none;
   }
+
   .language{
     display: flex;
     justify-content: center;
@@ -147,6 +115,12 @@
     height: 100%;
   }
   
+  @media (min-width: 480px) {
+    .language div{
+   
+      }
+  }
+
   @media (min-width: 992px) {
     .language div{
       width: 80px;     
