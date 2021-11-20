@@ -37,6 +37,8 @@
   .main{
       background-color: rgb(19, 37, 110);
       height: 80vh;
+      display:flex;
+      flex-direction: column;
   }
 
   .menu-grid {
@@ -102,11 +104,12 @@
   .language{
     display: flex;
     justify-content: center;
+   
   }
   .language div{
     width: 50px;
     margin: 10px;
-    cursor: pointer
+    cursor: pointer;
   }
 
   .language img{
